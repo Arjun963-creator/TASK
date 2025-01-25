@@ -2,7 +2,7 @@
 FROM httpd
 
 # Copy your HTML file into the default Nginx HTML directory
-COPY . /usr/share/nginx/html/
+COPY index.html /usr/local/apache2/htdocs/
 
 # Expose port 80 for the web server
 EXPOSE 80
